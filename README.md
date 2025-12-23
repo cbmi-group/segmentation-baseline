@@ -1,5 +1,5 @@
 # segmentation-baseline
-# Overview
+
 It includes six basic models (UNet, ResUNet, AttUNet, UNet++, U^2Net, Swin-UNETR), along with prediction code and metric evaluation code. The evaluation metrics comprise IOU (JC), Dice (DC), HD95, ASD, SSIM (structural similarity assessment), TVratio (structural smoothness assessment), and FOM (boundary assessment). Furthermore, the evaluation module can detect inaccurately annotated images in the dataset by identifying excessively large HD95 metrics.
 
 ## Quick Start
@@ -36,26 +36,26 @@ To perform metric calculation separately:
 
 * AttUNet: Attention-guided UNet with attention gates
 
-UNet++: Nested skip-path connections for enhanced feature fusion
+* UNet++: Nested skip-path connections for enhanced feature fusion
 
-U²Net: Nested U-structure with depth-wise supervision
+* U²Net: Nested U-structure with depth-wise supervision
 
-Swin-UNETR: Transformer-based architecture with shifted windows
+* Swin-UNETR: Transformer-based architecture with shifted windows
 
 ### Evaluation Metrics
 
-IOU/Jaccard Coefficient (JC): Region similarity measurement
+* IOU/Jaccard Coefficient (JC): Region similarity measurement
 
-Dice Coefficient (DC): Volume overlap evaluation
+* Dice Coefficient (DC): Volume overlap evaluation
 
-HD95: 95th percentile Hausdorff Distance for boundary accuracy
+* HD95: 95th percentile Hausdorff Distance for boundary accuracy
 
-ASD: Average Symmetric Surface Distance
+* ASD: Average Symmetric Surface Distance
 
-SSIM: Structural Similarity Index Assessment
+* SSIM: Structural Similarity Index Assessment
 
-TVratio: Structural Smoothness Assessment
+* TV ratio: Structural Smoothness Assessment
 
-FOM: Figure of Merit for boundary evaluation
+* FOM: Figure of Merit for boundary evaluation
 
 The evaluation module can automatically detect inaccurately annotated images in the dataset by identifying abnormally large HD95 metrics.
