@@ -28,9 +28,13 @@ To perform metric calculation separately:
 `python metrics_calculate.py`
 ### Dataset Structure
 
->> DATASET
->>> imgs
->>> masks
+DATASET/
+│
+├── imgs/               # Contains the original input training/validation images.
+├── masks/              # Contains the corresponding ground truth masks for images in `imgs/`.
+├── test/               # Contains the held-out test set images.
+└── test_masks/         # Contains the ground truth masks for images in `test/`.
+
 ## Features
 ### Supported Models
 
