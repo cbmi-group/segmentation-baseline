@@ -6,7 +6,7 @@ The model training module is designed to be executed through the run_hard.shshel
 ## Basic Execution
 Grant execution permission​ to the script (required for the first time):
 
-·chmod +x run_hard.sh·
+`chmod +x run_hard.sh`
 
 This command makes the script executable.
 
