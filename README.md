@@ -15,11 +15,10 @@ Most training parameters can be configured directly in the run_hard.shfile. The 
 
 ### Model Prediction
 For inference and automated evaluation:
-
-`chmod +x run_predict.sh`
-
-`/run_predict.sh`
-
+```
+chmod +x run_predict.sh
+/run_predict.sh
+```
 Note: The run_predict.shscript includes the evaluation command at the end.
 
 ### Standalone Evaluation
