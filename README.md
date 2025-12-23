@@ -8,6 +8,7 @@ It includes six basic models (UNet, ResUNet, AttUNet, UNet++, U^2Net, Swin-UNETR
 To train the models, first grant execution permission (if needed) and run the training script:
 
 `chmod +x run_hard.sh`
+
 `./run_hard.sh`
 
 Most training parameters can be configured directly in the run_hard.shfile. The dataset path needs to be set in train.py.
@@ -16,6 +17,7 @@ Most training parameters can be configured directly in the run_hard.shfile. The 
 For inference and automated evaluation:
 
 `.chmod +x run_predict.sh`
+
 `/run_predict.sh`
 
 Note: The run_predict.shscript includes the evaluation command at the end.
@@ -26,7 +28,7 @@ To perform metric calculation separately:
 `python metrics_calculate.py`
 
 ## Features
-Supported Models
+### Supported Models
 
 UNet: Classical encoder-decoder architecture for biomedical image segmentation
 
@@ -40,7 +42,7 @@ U²Net: Nested U-structure with depth-wise supervision
 
 Swin-UNETR: Transformer-based architecture with shifted windows
 
-## Evaluation Metrics
+### Evaluation Metrics
 
 IOU/Jaccard Coefficient (JC): Region similarity measurement
 
