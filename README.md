@@ -26,7 +26,11 @@ Note: The run_predict.shscript includes the evaluation command at the end.
 To perform metric calculation separately:
 
 `python metrics_calculate.py`
+### Dataset Structure
 
+>> DATASET
+>>> imgs
+>>> masks
 ## Features
 ### Supported Models
 
