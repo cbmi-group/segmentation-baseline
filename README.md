@@ -7,16 +7,16 @@ It includes six basic models (UNet, ResUNet, AttUNet, UNet++, U^2Net, Swin-UNETR
 
 To train the models, first grant execution permission (if needed) and run the training script:
 
-`chmod +x run_hard.sh  
-./run_hard.sh`
+`chmod +x run_hard.sh`
+`./run_hard.sh`
 
 Most training parameters can be configured directly in the run_hard.shfile. The dataset path needs to be set in train.py.
 
 ### Model Prediction
 For inference and automated evaluation:
 
-`.chmod +x run_predict.sh//
-/run_predict.sh`
+`.chmod +x run_predict.sh`
+`/run_predict.sh`
 
 Note: The run_predict.shscript includes the evaluation command at the end.
 
