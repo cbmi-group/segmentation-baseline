@@ -6,11 +6,10 @@ It includes six basic models (UNet, ResUNet, AttUNet, UNet++, U^2Net, Swin-UNETR
 ### Model Training
 
 To train the models, first grant execution permission (if needed) and run the training script:
-
-`chmod +x run_hard.sh`
-
-`./run_hard.sh`
-
+```
+chmod +x run_hard.sh
+./run_hard.sh
+```
 Most training parameters can be configured directly in the run_hard.shfile. The dataset path needs to be set in train.py.
 
 ### Model Prediction
@@ -34,6 +33,7 @@ DATASET/
 ├── test/               # Contains the held-out test set images.  
 └── test_masks/         # Contains the ground truth masks for images in `test/`.  
 ```
+
 ## Features
 ### Supported Models
 
