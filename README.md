@@ -2,6 +2,29 @@
 # Overview
 It includes six basic models (UNet, ResUNet, AttUNet, UNet++, U^2Net, Swin-UNETR), along with prediction code and metric evaluation code. The evaluation metrics comprise IOU (JC), Dice (DC), HD95, ASD, SSIM (structural similarity assessment), TVratio (structural smoothness assessment), and FOM (boundary assessment). Furthermore, the evaluation module can detect inaccurately annotated images in the dataset by identifying excessively large HD95 metrics.
 
+## Quick Start
+### Model Training
+
+To train the models, first grant execution permission (if needed) and run the training script:
+
+`chmod +x run_hard.sh
+./run_hard.sh`
+
+Most training parameters can be configured directly in the run_hard.shfile. The dataset path needs to be set in train.py.
+
+### Model Prediction
+For inference and automated evaluation:
+
+`.chmod +x run_predict.sh
+/run_predict.sh`
+
+Note: The run_predict.shscript includes the evaluation command at the end.
+
+### Standalone Evaluation
+To perform metric calculation separately:
+
+`python metrics_calculate.py`
+
 ## Features
 Supported Models
 
@@ -34,22 +57,3 @@ TVratio: Structural Smoothness Assessment
 FOM: Figure of Merit for boundary evaluation
 
 The evaluation module can automatically detect inaccurately annotated images in the dataset by identifying abnormally large HD95 metrics.
-
-## Quick Start
-### Model Training
-
-To train the models, first grant execution permission (if needed) and run the training script:
-`chmod +x run_hard.sh
-./run_hard.sh`
-Most training parameters can be configured directly in the run_hard.shfile. The dataset path needs to be set in train.py.
-
-### Model Prediction
-For inference and automated evaluation:
-`.chmod +x run_predict.sh
-/run_predict.sh`
-Note: The run_predict.shscript includes the evaluation command at the end.
-
-### Standalone Evaluation
-To perform metric calculation separately:
-`python metrics_calculate.py`
-
