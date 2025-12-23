@@ -16,7 +16,7 @@ Most training parameters can be configured directly in the run_hard.shfile. The 
 ### Model Prediction
 For inference and automated evaluation:
 
-`.chmod +x run_predict.sh`
+`chmod +x run_predict.sh`
 
 `/run_predict.sh`
 
@@ -30,11 +30,11 @@ To perform metric calculation separately:
 ## Features
 ### Supported Models
 
-UNet: Classical encoder-decoder architecture for biomedical image segmentation
+* UNet: Classical encoder-decoder architecture for biomedical image segmentation
 
-ResUNet: UNet with residual connections for improved gradient flow
+* ResUNet: UNet with residual connections for improved gradient flow
 
-AttUNet: Attention-guided UNet with attention gates
+* AttUNet: Attention-guided UNet with attention gates
 
 UNet++: Nested skip-path connections for enhanced feature fusion
 
