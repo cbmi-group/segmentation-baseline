@@ -1,6 +1,6 @@
 # segmentation-baseline
 
-It includes six basic models (UNet, ResUNet, AttUNet, UNet++, U^2Net, Swin-UNETR), along with prediction code and metric evaluation code. The evaluation metrics comprise IOU (JC), Dice (DC), HD95, ASD, SSIM (structural similarity assessment), TVratio (structural smoothness assessment), and FOM (boundary assessment). Furthermore, the evaluation module can detect inaccurately annotated images in the dataset by identifying excessively large HD95 metrics.
+It includes six basic models (UNet, ResUNet, AttUNet, UNet++, U^2Net, Swin-UNETR), along with prediction code and metric evaluation code. The evaluation metrics comprise IOU (JC), Dice (DC), HD95, ASD, SSIM (structural similarity assessment), TV ratio (structural smoothness assessment), and FOM (boundary assessment). Furthermore, the evaluation module can detect inaccurately annotated images in the dataset by identifying excessively large HD95 metrics.
 
 ## Quick Start
 ### Model Training
@@ -22,8 +22,10 @@ Note: The run_predict.shscript includes the evaluation command at the end.
 
 ### Standalone Evaluation
 To perform metric calculation separately:
+```
+python metrics_calculate.py
+```
 
-`python metrics_calculate.py`
 ### Dataset Structure
 ```
 DATASET/  
